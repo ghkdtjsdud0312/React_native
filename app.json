@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "kh-bear",
-    "slug": "kh-bear",
+    "name": "workoutbuddys",
+    "slug": "workoutbuddys",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +16,12 @@
       "supportsTablet": true
     },
     "android": {
-      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE"],
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -26,6 +31,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "88807771-c4b9-48ee-88af-4b8a68a84fcc"
+      }
+    },
+    "owner": "seonyoungg"
   }
 }
