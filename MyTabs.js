@@ -114,6 +114,7 @@ function HomeMenu({ navigation }) {
         ref={webViewRef}
         onLoad={() => setLoading(false)}
         source={{ uri: HOME_URL }} // 있어야 뜸
+        mixedContentMode="always"
       />
       {loading && <LoadAnimation />}
     </SafeAreaView>
